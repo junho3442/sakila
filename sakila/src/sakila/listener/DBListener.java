@@ -23,6 +23,7 @@ public class DBListener implements ServletContextListener {
     //톰켓이 실행될때 실행    
     	try {
     		Class.forName("org.mariadb.jdbc.Driver"); //db 드라이버 연결
+    		//여러번 호출하지 않아도 되서
     	}catch(Exception e) { //드라이버 연결 실패시
     		e.printStackTrace();
     		System.out.println("드라이버 연결 실패");

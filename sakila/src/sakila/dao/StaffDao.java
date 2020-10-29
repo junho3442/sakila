@@ -19,6 +19,7 @@ public class StaffDao {
 			returnStaff = new Staff();
 			returnStaff.setEmail(rs.getNString("email"));
 			returnStaff.setUsername(rs.getNString("username"));
+			returnStaff.setStoreId(rs.getInt("store_id"));
 		}
 		stmt.close();
 		return returnStaff;
